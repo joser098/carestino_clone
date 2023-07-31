@@ -5,7 +5,10 @@ import slider1 from "../src/assets/slider1.webp";
 import slider2 from "../src/assets/slider2.webp";
 import slider3 from "../src/assets/slider3.webp";
 import Box from "./components/Box/Box";
-import card from './assets/card.svg';
+import { info } from './utils/info'
+
+
+
 
 function App() {
   return (
@@ -17,10 +20,10 @@ function App() {
       </section>
 
       <section className={styles.boxes}>
-        <Box  link={"#"} svg={card} title={"12 Cuotas"} text={"Sin interes"} />
-        <Box  link={"#"}  svg={card} title={"12 Cuotas"} text={"Sin interes"} />
-        <Box  link={"#"} svg={card} title={"12 Cuotas"} text={"Sin interes"} />
-        <Box  link={"#"} svg={card} title={"12 Cuotas"} text={"Sin interes"} />
+        <Box  link={"#"} svg={info.box1.image} title={info.box1.title} text={info.box1.text} />
+        <Box  link={"#"}  svg={info.box2.image} title={info.box2.title} text={info.box2.text} />
+        <Box  link={"#"} svg={info.box3.image} title={info.box3.title} text={info.box3.text} />
+        <Box  link={"#"} svg={info.box4.image} title={info.box4.title} text={info.box4.text} />
       </section>
 
     </>
