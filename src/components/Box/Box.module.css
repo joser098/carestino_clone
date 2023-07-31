@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+.container:hover {
+    opacity: 0.7;
+}
+
 .container img {
     max-width: 3rem ;
     max-height: 3rem;
