@@ -5,3 +5,16 @@
     margin: 5px 0px;
 }
 
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 650px) {
+    .cards {
+        flex-direction: column;
+    }
+}
+
+
+

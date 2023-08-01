@@ -1,0 +1,45 @@
+.container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: end;
+  padding: 32px 0px;
+  margin: 0px 5px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container button {
+    /* display: none; */
+    font-weight: 450;
+    position: absolute;
+    width: 30%;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 23px;
+    background-color:#fff;
+    color: #4b5563;
+    transition: 0.5s ease all ;
+}
+
+.container button:hover {
+  display: block;
+  background-color: #ff5100 ;
+  color: #fff;
+}
+
+@media (max-width: 650px) {
+
+  .container {
+    padding: 5px 0px;
+    margin: 0px
+  }
+
+  .container button {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}
