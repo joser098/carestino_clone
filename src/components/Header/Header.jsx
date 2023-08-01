@@ -36,7 +36,15 @@ const Header = () => {
       <section className={styles.Navbar}>
         <ul className={styles.mainList}>
           <li className={styles.categyList}>
-            <button className={styles.btn} onClick={() => {setDropDownState(!dropDownState); console.log(dropDownState)}}>CATEGORIAS</button>
+            <button
+              className={styles.btn}
+              onClick={() => {
+                setDropDownState(!dropDownState);
+                console.log(dropDownState);
+              }}
+            >
+              CATEGORIAS
+            </button>
             <ul className={dropDownState ? styles.hidden : styles.show}>
               <li>
                 <a href="#">Discontinuos</a>
@@ -86,6 +94,12 @@ const Header = () => {
 
           <li>
             <a href="#">GIFTCARD</a>
+          </li>
+          <li>
+            <a href="#">CONTACTO</a>
+          </li>
+          <li>
+            <a href="#">SEGUIMIENTO</a>
           </li>
           <li>
             <a href="#">BLOG</a>

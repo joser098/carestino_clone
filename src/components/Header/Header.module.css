@@ -32,7 +32,7 @@
 }
 
 .mainList {
-  padding: 0px;
+  padding: 5px 0px;
   margin: 0px;
   background-color: #e5e4e2;
   margin-top: 0px;
@@ -42,13 +42,10 @@
   align-items: center;
 }
 
-/* .mainList li {
-  padding: 7px 2rem;
-} */
-
 .mainList a {
   text-decoration: none;
   color: #a0a0a0;
+  transition: .5s ease all;
 }
 
 .hidden {
@@ -87,9 +84,10 @@
   cursor: pointer;
   font-size: medium;
   color: #a0a0a0;
+  transition: .5s ease all;
 }
 
 .btn:hover,
 .mainList a:hover {
-  color: #ec6124;
+  color:#ff5100;
 }

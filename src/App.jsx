@@ -4,6 +4,8 @@ import Header from "./components/Header/Header";
 import Box from "./components/Box/Box";
 import Card from "./components/Card/Card";
 import { info, cards, sliders } from './utils/info'
+import Footer from "./components/Footer/Footer";
+import InfoFooter from "./components/InfoFooter/InfoFooter";
 
 function App() {
   return (
@@ -26,6 +28,11 @@ function App() {
           <Card img={cards.card_blog}/>
           <Card img={cards.card_seguimiento}/>
           <Card img={cards.card_trabaja}/>
+        </section>
+
+        <section>
+          <InfoFooter/>
+          <Footer/>
         </section>
       </footer>
 

@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact,
+.call,
+.newsletter {
+width: 33.3%;
+padding: 3rem;
+border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.contact img {
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: small;
+    color: #4b5563;
+    font-weight: bold;
+}
+
+span {
+    font-size: small;
+    color: #4b5563 ;
+    margin-top: 5px;
+    display: block;
+    font-weight: 400;
+}
+
+.formInput {
+    margin-top: 1rem;
+    height: 2rem;
+    border: 1px solid #4b5563;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.prefix {
+    border-radius: 10px;
+    width: 50px;
+    margin-right: 10px;
+    border: 1px solid #4b5563;
+}
+
+.container button {
+    width: 50px;
+    height: 2rem;
+    background-color: #ff5100;
+    border: none;
+}
+
+.container button img {
+    max-height: 1rem;
+    border: 1px solid #ff5100;
+    margin-bottom: 3px;
+}
+
+.terms {
+    display: inline-flex;
+    align-items: center;
+}
+
+.terms a {
+    text-decoration: none;
+    padding-left: 5px;
+    color: #ff5100;
+}
+
+.terms a:hover {
+    text-decoration: underline; 
+}
+
+.checkbox {
+    margin-right: 5px ;
+}
+
