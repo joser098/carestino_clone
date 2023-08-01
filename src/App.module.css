@@ -16,5 +16,29 @@
     }
 }
 
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease all;
+}
+.show {
+    max-height: 1000px;
+    overflow: auto;
+    transition: 1s ease all;
+}
 
+.InfoFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.InfoFooter button {
+    background-color: #c8c6c7;
+    border: none;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    height: 2rem;
+    width: 10rem;
+}

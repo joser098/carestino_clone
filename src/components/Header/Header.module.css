@@ -27,7 +27,7 @@
   }
 
   .mainList a, .mainList button {
-    font-size: smaller;
+    font-size: 8px;
   }
 }
 

@@ -38,3 +38,13 @@
 .links a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 650px) {
+  .links ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .links a {
+    font-size: smaller;
+  }
+}

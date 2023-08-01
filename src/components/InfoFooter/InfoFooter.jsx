@@ -4,11 +4,9 @@ import logo from "../../assets/logo.svg";
 import btn from "../../assets/btn.svg";
 
 const InfoFooter = () => {
-  const [classToogle, setClassToogle] = useState(false);
 
   return (
     <section className={styles.container}>
-      {/* <button>Más información</button> */}
       <div className={styles.contact}>
         <img src={logo} alt="logo" />
         <p>Escribinos las 24 hs.</p>
