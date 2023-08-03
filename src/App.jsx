@@ -6,10 +6,22 @@ import Card from "./components/Card/Card";
 import { info, cards, sliders } from "./utils/info";
 import Footer from "./components/Footer/Footer";
 import InfoFooter from "./components/InfoFooter/InfoFooter";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [toogle, setToogle] = useState(false);
+
+
+  useEffect(() => {
+    const check = () => {
+      const warning = JSON.parse(window.localStorage.getItem("warning"));
+      if(warning) return;
+      alert("IMAGENES Y LOGOS PERTENECEN A www.carestino.com")
+      window.localStorage.setItem("warning","true")
+    }
+
+    check()
+  }, [])
 
   return (
     <>
