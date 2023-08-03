@@ -40,7 +40,6 @@ const Header = () => {
               className={styles.btn}
               onClick={() => {
                 setDropDownState(!dropDownState);
-                console.log(dropDownState);
               }}
             >
               CATEGORIAS

@@ -6,7 +6,7 @@ const MenuIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 100"
       xmlSpace="preserve"
-      class="w-12 h-15 pt-1.5 m-auto"
+      className="w-12 h-15 pt-1.5 m-auto"
     >
       <g
         id="Capa_53"
@@ -17,7 +17,7 @@ const MenuIcon = () => {
         strokeLinejoin="round"
         strokeMiterlimit="10"
       >
-        <path class="st14" d="M25 35h50M25 50h50M25 65h50"></path>
+        <path className="st14" d="M25 35h50M25 50h50M25 65h50"></path>
       </g>
     </svg>
   );
