@@ -1,4 +1,11 @@
-const Carrousel = ({slider1, slider2, slider3}) => {
+import { useEffect } from "react";
+
+const Carrousel = ({sliders}) => {
+
+  useEffect(() => {
+    console.log(window.screen.width)
+  }, [window.screen.width])
+
     return (
 <div id="carouselAutoplaying" className="carousel slide" data-bs-ride="carousel" data-bs-theme="dark">
 <div className="carousel-indicators">
@@ -8,13 +15,13 @@ const Carrousel = ({slider1, slider2, slider3}) => {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="10000">
-      <img src={slider1} className="d-block w-100" alt="slider1"/>
+      <img src={window.screen.width > 500 ? sliders.desktop.slider1 : sliders.mobile.mobileSlider1} className="d-block w-100" alt="slider1"/>
     </div>
     <div className="carousel-item" data-bs-interval="10000">
-      <img src={slider2} className="d-block w-100" alt="slider2"/>
+      <img src={window.screen.width > 500 ? sliders.desktop.slider2 : sliders.mobile.mobileSlider2} className="d-block w-100" alt="slider2"/>
     </div>
     <div className="carousel-item" data-bs-interval="10000">
-      <img src={slider3} className="d-block w-100" alt="slider3"/>
+      <img src={window.screen.width > 500 ? sliders.desktop.slider3 : sliders.mobile.mobileSlider3} className="d-block w-100" alt="slider3"/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
